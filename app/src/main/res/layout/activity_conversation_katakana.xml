@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#61ade0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="뒤로가기"
+        android:textSize="15dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:background="@drawable/frame"
+        android:onClick="backButton"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="196dp"
+        android:layout_height="wrap_content"
+        android:text="이전 페이지"
+        android:textSize="15dp"
+        android:background="@drawable/frame"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:id="@+id/prev"
+        android:layout_gravity="left|bottom" />
+
+    <Button
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:text="다음 페이지"
+        android:textSize="15dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:background="@drawable/frame"
+        android:id="@+id/next"
+        android:layout_gravity="right|bottom" />
+
+
+    <ViewFlipper
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/flipper">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageButton
+                android:layout_marginTop="70pt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#61ade0"
+                android:src="@drawable/donki"
+                android:onClick="sdButton"
+                android:layout_gravity="center"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:id="@+id/imgButton1"
+                />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="돈키호테는 간토 지방을 중심으로 일본의 주요 도시에서 종합 할인 매장을 전개하는 회사이다"
+                android:visibility="invisible"
+                android:textColor="#ffffff"
+                android:textSize="25dp"
+                android:id="@+id/donki"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageButton
+                android:layout_marginTop="70pt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#61ade0"
+                android:src="@drawable/buger"
+                android:onClick="sdButton"
+                android:layout_gravity="center"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:id="@+id/imgButton2"
+                />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="버거킹은 전 세계적으로 유명한 패스트 푸드 업체로 햄버거 등을 판매하고 있다.일본에서는 롯데리아가 총판 운영되고 있다"
+                android:visibility="invisible"
+                android:textColor="#ffffff"
+                android:textSize="25dp"
+                android:id="@+id/buger"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageButton
+                android:layout_marginTop="70pt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#61ade0"
+                android:src="@drawable/family"
+                android:onClick="sdButton"
+                android:layout_gravity="center"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:id="@+id/imgButton3"
+                />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="훼미리마트는 일본의 편의점 체인점이다."
+                android:visibility="invisible"
+                android:textColor="#ffffff"
+                android:textSize="25dp"
+                android:id="@+id/family"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageButton
+                android:layout_marginTop="70pt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#61ade0"
+                android:src="@drawable/loson"
+                android:onClick="sdButton"
+                android:layout_gravity="center"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:id="@+id/imgButton4"
+                />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="주식회사 로손은 일본의 편의점 체인점이다"
+                android:visibility="invisible"
+                android:textColor="#ffffff"
+                android:textSize="25dp"
+                android:id="@+id/loson"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageButton
+                android:layout_marginTop="70pt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#61ade0"
+                android:src="@drawable/macdo"
+                android:onClick="sdButton"
+                android:layout_gravity="center"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:id="@+id/imgButton5"
+                />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="맥도날드는 미국에 본거지를 둔 햄버거 체인점이다. "
+                android:visibility="invisible"
+                android:textColor="#ffffff"
+                android:textSize="25dp"
+                android:id="@+id/macdo"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageButton
+                android:layout_marginTop="70pt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#61ade0"
+                android:src="@drawable/mister"
+                android:onClick="sdButton"
+                android:layout_gravity="center"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:id="@+id/imgButton6"
+                />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="미스터도넛은 미국 매사추세츠 주 보스턴에서 1956년에 세워진 대규모 도넛 체인점이다. "
+                android:visibility="invisible"
+                android:textColor="#ffffff"
+                android:textSize="25dp"
+                android:id="@+id/mister"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageButton
+                android:layout_marginTop="70pt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#61ade0"
+                android:src="@drawable/saizeriya"
+                android:onClick="sdButton"
+                android:layout_gravity="center"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:id="@+id/imgButton7"
+                />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="사이제리야는 일본의 관동지역으로부터 시작해 큐슈로 진입한 패밀리 레스토랑이다"
+                android:visibility="invisible"
+                android:textColor="#ffffff"
+                android:textSize="25dp"
+                android:id="@+id/saizeiya"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageButton
+                android:layout_marginTop="70pt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#61ade0"
+                android:src="@drawable/seven_e"
+                android:onClick="sdButton"
+                android:layout_gravity="center"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:id="@+id/imgButton8"
+                />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="세븐일레븐은 일본의 편의점 체인점이다.  2008년, 세븐일레븐은 맥도날드를 제치고 전 세계적으로 점포 수가 가장 많은 체인점이 되었다."
+                android:visibility="invisible"
+                android:textColor="#ffffff"
+                android:textSize="25dp"
+                android:id="@+id/seven_e"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:layout_marginTop="70pt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#61ade0"
+                android:src="@drawable/uniqlo"
+                android:onClick="sdButton"
+                android:layout_gravity="center"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:id="@+id/imgButton9"
+                />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="유니클로는 1974년 일본에서 설립된 캐주얼 의류 업체이다. "
+                android:visibility="invisible"
+                android:textColor="#ffffff"
+                android:textSize="25dp"
+                android:id="@+id/uniqlo"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+
+        </LinearLayout>
+    </ViewFlipper>
+
+
+</FrameLayout>
+
+

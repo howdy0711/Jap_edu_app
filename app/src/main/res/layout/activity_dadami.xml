@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#61ade0"
+    tools:context="com.example.lg.cpa.Dadami">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/textID"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:text="畳は、和室に敷かれる床材です。湿気が多く、夏は暑く、冬は寒い日本の気候の下では、古くから住宅に不可欠な存在でした。それは、畳に調湿、断熱効果が優れているからです。他にも、畳には防音効果や、空気清浄効果もあります。第二次世界大戦以降、和室を持つ住宅が減少しましたが、畳の持つ暖かさ、日本伝統のインテリア要素、自然素材の使用による安全性に注目が集まっています。例えば、正方形の琉球畳や縁のない縁なし畳を上手く取り入れた住宅などがあげられます。このように、畳は再び床材として見直す動きが出てきています。"
+            />
+    </ScrollView>
+
+</LinearLayout>

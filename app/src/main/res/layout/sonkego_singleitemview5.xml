@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#61ade0">
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:layout_marginLeft="150dp"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:text="정중체" />
+
+    <TextView
+        android:id="@+id/t2"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:text="1그룹 う단→　い단으로 고침" />
+
+    <TextView
+        android:id="@+id/t3"
+        android:layout_below="@+id/t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:text="行く→　行きます" />
+
+
+    <TextView
+        android:id="@+id/t6"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/t3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:text="2그룹 る빼고 + ます" />
+
+    <TextView
+        android:id="@+id/t7"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/t6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:text="食べる→　たべます" />
+
+
+    <TextView
+        android:id="@+id/t8"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/t7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:text="3그룹 외움" />
+
+    <TextView
+        android:id="@+id/t9"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/t8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:text="する→　します" />
+
+
+    <TextView
+        android:id="@+id/t10"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/t9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:text="くる→　きます" />
+</RelativeLayout>
+

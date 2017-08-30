@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#61ade0">
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:layout_marginLeft="120dp"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        android:text="(특별)겸양어" />
+
+    <Button
+        android:id="@+id/t2"
+        android:background="@drawable/frame"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="まいる,うかがう"></Button>
+
+    <TextView
+        android:id="@+id/t2_2"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/t1"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:text="오다,가다" />
+
+
+    <Button
+        android:id="@+id/t3"
+        android:background="@drawable/frame"
+        android:layout_below="@+id/t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:text="おる" />
+
+    <TextView
+        android:id="@+id/t3_3"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/t2"
+        android:layout_toRightOf="@+id/t3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:text="있다" />
+
+    <Button
+        android:id="@+id/t4"
+        android:background="@drawable/frame"
+        android:layout_below="@+id/t3"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="いたす" />
+
+    <TextView
+        android:id="@+id/t4_4"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/t3"
+        android:layout_toRightOf="@+id/t4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:text="하다" />
+
+    <Button
+        android:id="@+id/t5"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/frame"
+        android:layout_below="@+id/t4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="いただく" />
+
+    <TextView
+        android:id="@+id/t5_5"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/t4"
+        android:layout_toRightOf="@+id/t5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:text="먹다,마시다" />
+
+    <Button
+        android:background="@drawable/frame"
+        android:id="@+id/t6"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/t5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="はいけんする" />
+
+    <TextView
+        android:id="@+id/t6_6"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/t5"
+        android:layout_toRightOf="@+id/t6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:text="보다,읽다" />
+
+    <Button
+        android:background="@drawable/frame"
+        android:id="@+id/t7"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/t6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="存じている" />
+
+    <TextView
+        android:id="@+id/t7_7"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/t6"
+        android:layout_toRightOf="@+id/t7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:text="알고 있다." />
+
+    <Button
+        android:background="@drawable/frame"
+        android:id="@+id/t8"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/t7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="おめにかかる" />
+
+    <TextView
+        android:id="@+id/t8_8"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/t7"
+        android:layout_toRightOf="@+id/t8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:text="뵙다." />
+
+
+</RelativeLayout>
+

@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#61ade0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="이전"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:background="@drawable/frame"
+        android:id="@+id/prev"
+
+        android:layout_gravity="left|bottom" />
+
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="다음"
+        android:id="@+id/next"
+        android:background="@drawable/frame"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+
+        android:layout_gravity="right|bottom" />
+
+    <ViewFlipper
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/flipper">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:text="1. 彼は今、新薬の研究に(挑んで)いる。"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="24dp"
+                android:gravity="center"
+                />
+
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1. はげんで"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2. のぞんで"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3. からんで"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4. いどんで"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:checked="false" />
+            </RadioGroup>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:layout_weight="0.00"
+                android:text="2. 住民が　建設会社を相手に、(訴訟)を起こした。"
+                android:textColor="#ffffff"
+                android:textSize="24dp"
+                android:singleLine="false"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_column="13" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:id="@+id/radioGroup2"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1. そしょう"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2. せきしょう"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3. そこう"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4. せっこうを"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:checked="false" />
+            </RadioGroup>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:layout_weight="0.00"
+                android:text="3. 私の主張は単なる（　　）ではなく、確たる証拠に基づいている。"
+                android:textColor="#ffffff"
+                android:textSize="24dp"
+                android:singleLine="false"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_column="13" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:id="@+id/radioGroup3"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1. 模索"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2. 推測"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3. 推移"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4. 思索"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:checked="false" />
+            </RadioGroup>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:layout_weight="0.00"
+                android:text="4. 事故の原因は、機械の(    )作動にあると考えられている。"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="24dp"
+                android:singleLine="false"
+                android:gravity="center"
+                android:layout_column="13" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:id="@+id/radioGroup4"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1. 偽"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2. 被"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3. 誤"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4. 乱"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:checked="false" />
+            </RadioGroup>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:layout_weight="0.00"
+                android:text="5. この　マニュアルの説明は(ややこしい)。"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="24dp"
+                android:singleLine="false"
+                android:gravity="center"
+                android:layout_column="13" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:id="@+id/radioGroup5"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1. 明確だ"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2. 奇妙だ"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3. 複雑"
+                    android:textStyle="bold"
+                    android:textSize="13dp"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="4. 簡潔だ"
+                    android:textSize="13dp"
+                    android:checked="false"
+                    />
+            </RadioGroup>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:layout_weight="0.00"
+                android:text="6. 人を(あざむいて)、利益を得てはいけない。"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="24dp"
+                android:singleLine="false"
+                android:gravity="center"
+                android:layout_column="13" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:id="@+id/radioGroup6"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1. くるしませて"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2. だまして"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3. きずつけて"
+                    android:textStyle="bold"
+                    android:textSize="13dp"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="4. まよわせて"
+                    android:textSize="13dp"
+                    android:checked="false" />
+
+            </RadioGroup>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:layout_weight="0.00"
+                android:text="7. いまさら後悔してみた(   ),　してしまったことは取り返しがっかない。"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="24dp"
+                android:singleLine="false"
+                android:gravity="center"
+                android:layout_column="13" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:id="@+id/radioGroup7"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1. ところで"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2. といえども"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3. にせよ"
+                    android:textStyle="bold"
+                    android:textSize="13dp"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="4. ばかりに"
+                    android:textSize="13dp"
+                    android:checked="false" />
+
+            </RadioGroup>
+        </TableLayout>
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:layout_weight="0.00"
+                android:text="8. 勝ったから(    )、今日の試合の内容は決してほめられるものではなかった。"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="24dp"
+                android:singleLine="false"
+                android:gravity="center"
+                android:layout_column="13" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:id="@+id/radioGroup8"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1. いいようなことに"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2. よさそうなものを"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3. いいようなものの"
+                    android:textStyle="bold"
+                    android:textSize="13dp"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="4. よさそうなことで"
+                    android:textSize="13dp"
+                    android:checked="false" />
+
+            </RadioGroup>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:layout_weight="0.00"
+                android:text="9. キャリア。"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="24dp"
+                android:singleLine="false"
+                android:gravity="center"
+                android:layout_column="13" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:id="@+id/radioGroup9"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1. その分野のキャリアになるには、長い間の努力が必要だ。"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2. 先月賞を取ったあの歌手のキャリアは苦労続きだったそうだ。 "
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3. 昨日、異動の発表があって、兄のキャリアは部長になった。"
+                    android:textStyle="bold"
+                    android:textSize="13dp"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="4. 彼のキャリアはそれほど長くないが、この仕事をよく理解している。"
+                    android:textSize="13dp"
+                    android:checked="false" />
+
+            </RadioGroup>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:layout_weight="0.00"
+                android:text="10. いたわる。"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="24dp"
+                android:singleLine="false"
+                android:gravity="center"
+                android:layout_column="13" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:id="@+id/radioGroup10"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1. 弱い立場の人をいたわるのは大切なことです。"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2. 山田さんはこれまでの努力をいたわってくれました。 "
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3. 母は孫が遊びに来たら、いつもいたわっていました。 "
+                    android:textStyle="bold"
+                    android:textSize="13dp"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="4. 政治家は国民の生活をいたわるべきです。"
+                    android:textSize="13dp"
+                    android:checked="false" />
+
+            </RadioGroup>
+        </TableLayout>
+
+
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+
+            <Button
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="결과보기"
+                android:background="@drawable/frame"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:id="@+id/result" />
+
+        </TableLayout>
+
+    </ViewFlipper>
+</FrameLayout>

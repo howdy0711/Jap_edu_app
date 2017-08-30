@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#61ade0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="뒤로가기"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:background="@drawable/frame"
+        android:onClick="backButton"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="196dp"
+        android:layout_height="wrap_content"
+        android:text="이전 페이지"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:background="@drawable/frame"
+        android:id="@+id/prev"
+        android:layout_gravity="left|bottom" />
+
+    <Button
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:text="다음 페이지"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:background="@drawable/frame"
+        android:id="@+id/next"
+        android:layout_gravity="right|bottom" />
+
+
+    <ViewFlipper
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/flipper">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="100dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="같은 모음을 두 박으로 길게 늘어 발음한다. 가타카나 장음은 ー로 표기한다."
+
+                android:textColor="#ffffff"
+                android:textSize="22dp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120pt"
+                android:text="おばあさん:할머니 、おかあさん:어머니"
+
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:gravity="center"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sdButton"
+                android:text="발음듣기"
+                android:textStyle="bold"
+                android:onClick="sdButton"
+                android:layout_gravity="center"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120pt"
+                android:text="おじいさん:할아버지 、おにさん:형,오빠"
+
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:gravity="center"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="발음듣기"
+                android:textStyle="bold"
+                android:onClick="sdButton"
+
+                android:layout_gravity="center"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120pt"
+                android:text="ゆうき:용기 、くうき:공기"
+
+                android:textColor="#ffffff"
+                android:textSize="25dp"
+                android:gravity="center"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sdButton2"
+                android:text="발음듣기"
+                android:textStyle="bold"
+                android:onClick="sdButton"
+                android:textColor="#ffffff"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120pt"
+                android:text="おねえさん:언니 、せんせい:선생님"
+
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:gravity="center"/>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sdButton3"
+                android:text="발음듣기"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textColor="#ffffff"
+                android:onClick="sdButton"
+                android:gravity="center"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120pt"
+                android:text="おおい:많다 、とおい:멀다"
+
+                android:textColor="#ffffff"
+                android:textSize="25dp"
+                android:gravity="center"/>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="발음듣기"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textColor="#ffffff"
+                android:onClick="sdButton"
+                android:gravity="center"
+                />
+        </LinearLayout>
+
+
+
+    </ViewFlipper>
+
+
+</FrameLayout>
+
+

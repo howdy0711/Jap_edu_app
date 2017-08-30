@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?><!-- suppress ALL -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lg.cpa">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- PlayRTC SDK permission START -->
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- PlayRTC SDK permission END -->
+
+
+    <!-- PlayRTC SDK 로그 파일 SDCARD 지정 시 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- PlayRTC SDK AudioManager 설정 시 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:uiOptions="splitActionBarWhenNarrow">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.nhn.android.naverlogin.ui.OAuthLoginActivity" />
+        <activity
+            android:name="com.nhn.android.naverlogin.ui.OAuthLoginInAppBrowserActivity"
+            android:label="OAuth2.0 In-app" />
+        <activity
+            android:name=".LoadingActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:name=".jp" />
+        <activity android:name=".login" />
+        <activity android:name=".grammar" />
+        <activity android:name=".grammar_level1" />
+        <activity android:name=".grammar_level1_ch1" />
+        <activity android:name=".grammar_level2" />
+        <activity android:name=".grammar_level3" />
+        <activity android:name=".grammar_level4" />
+        <activity android:name=".grammar_level5" />
+        <activity android:name=".grammar_level6" />
+        <activity android:name=".conversation" />
+        <activity android:name=".study" />
+        <activity android:name=".grammar_level_ch2" />
+        <activity android:name=".country" />
+        <activity android:name=".japan_study" />
+        <activity android:name=".Japan_JOIN" />
+        <activity android:name=".Korean_JOIN" />
+        <activity android:name=".kaiwa3" />
+        <activity android:name=".kaiwa4" />
+        <activity android:name=".kaiwa5" />
+        <activity android:name=".kaiwa6" />
+        <activity android:name=".kaiwa7" />
+        <activity android:name=".kaiwa8" />
+        <activity android:name=".kaiwa9" />
+        <activity
+            android:name=".Listen1"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_listen1"
+            android:theme="@style/FullscreenTheme" />
+        <activity android:name=".kaiwa" />
+        <activity android:name=".Gridview" />
+        <activity android:name=".kaiwa2" />
+        <activity android:name=".MainNote" />
+        <activity android:name=".ListActivity" />
+        <activity
+            android:name=".PlayRTCActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity android:name=".grammar_level_ch3" />
+        <activity android:name=".grammar_level_ch4" />
+        <activity android:name=".grammar_level_ch5" />
+        <activity android:name=".grammar_level_ch6" />
+        <activity android:name=".grammar_level_ch7" />
+        <activity android:name=".grammar_level_ch8" />
+        <activity android:name=".conversation_katakana" />
+        <activity android:name=".intro" />
+        <activity android:name=".readView" />
+        <activity android:name=".Dadami" />
+        <activity android:name=".kyuka_read" />
+        <activity android:name=".Dictionary" />
+        <activity android:name=".SingleItemView" />
+        <activity android:name=".N5_grammer" />
+        <activity android:name=".N5_singleItemView" />
+        <activity android:name=".N4_grammer" />
+        <activity android:name=".N4_singleItemView" />
+        <activity android:name=".N3_grammer" />
+        <activity android:name=".N3_singleItemView" />
+        <activity android:name=".N2_grammer" />
+        <activity android:name=".N2_singleItemView" />
+        <activity android:name=".N1_grammer" />
+        <activity android:name=".N1_singleItemView" />
+        <activity android:name=".Sonkego" />
+        <activity android:name=".Sonkego_singleItemView" />
+        <activity android:name=".test" />
+        <activity android:name=".test_result" />
+        <activity android:name=".test_jlpt1" />
+        <activity android:name=".test_jlpt1_result" />
+        <activity android:name=".test_jlpt2" />
+        <activity android:name=".test_jlpt2_result" />
+        <activity android:name=".test_jlpt3" />
+        <activity android:name=".test_jlpt3_result" />
+        <activity android:name=".test_jlpt4" />
+        <activity android:name=".test_jlpt4_result" />
+        <activity android:name=".Study_hangle" />
+        <activity android:name=".japan_login"></activity>
+        <activity android:name=".Ko_conversation">
+        </activity>
+        <activity android:name=".Ko_singleItemView"></activity>
+        <activity android:name=".vowel"></activity>
+        <activity android:name=".consonant"></activity>
+    </application>
+
+</manifest>

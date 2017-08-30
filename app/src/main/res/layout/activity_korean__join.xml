@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#61ade0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.lg.cpa.Korean_JOIN">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:hint="아이디"
+        android:padding="15dp"
+        android:id="@+id/ID"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:hint="비밀번호"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+        android:inputType="textPassword"
+        android:id="@+id/password"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_marginTop="10dp"
+        android:hint="비밀번호 확인"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:id="@+id/passCheck"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="성별"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:padding="5dp"
+            />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/RadioGroupSex"
+            >
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="남자"
+                android:textColor="#ffffff"
+                android:padding="5dp"
+                android:layout_marginTop="3dp"
+                android:id="@+id/man"
+                android:onClick="RadioSex"
+                />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="여자"
+                android:textColor="#ffffff"
+                android:padding="5dp"
+                android:layout_marginTop="3dp"
+                android:id="@+id/girl"
+                android:onClick="RadioSex"
+                />
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="국가"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:padding="5dp"
+            />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/RadioGroupCountry"
+
+            >
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="일본"
+                android:textColor="#ffffff"
+                android:padding="5dp"
+                android:layout_marginTop="3dp"
+                android:id="@+id/japan"
+                android:onClick="RadioCountry"
+                />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="한국"
+                android:textColor="#ffffff"
+                android:padding="5dp"
+                android:layout_marginTop="3dp"
+                android:id="@+id/korea"
+                android:onClick="RadioCountry"
+                />
+        </RadioGroup>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/agetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="나이"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:padding="5dp"
+            />
+        <Spinner
+            android:layout_marginLeft="1pt"
+            android:background="@android:drawable/editbox_background"
+            android:layout_toRightOf="@+id/agetext"
+            android:layout_width="99dip"
+            android:layout_height="49dp"
+            android:id="@+id/age"
+            android:layout_gravity="center_horizontal" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="가입하기"
+        android:textColor="#ffffff"
+        android:background="#f1666a"
+        android:id="@+id/Join"
+        android:textSize="17dp"
+        android:padding="20dp"
+        android:onClick="Join" />
+
+    <WebView
+        android:visibility="gone"
+        android:id="@+id/web"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></WebView>
+</LinearLayout>
+

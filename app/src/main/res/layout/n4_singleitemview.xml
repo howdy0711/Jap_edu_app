@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#61ade0">
+
+    <TextView
+        android:layout_marginTop="180dp"
+        android:id="@+id/word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:text="word" />
+
+    <TextView
+        android:id="@+id/grammer_hiragana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="grammer_hiragana" />
+
+
+    <TextView
+        android:id="@+id/grammer_mean"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="grammer_mean" />
+    <Button
+        android:id="@+id/balum"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#ffffff"
+        android:text="발음듣기"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:background="@drawable/frame"
+        />
+</LinearLayout>
+

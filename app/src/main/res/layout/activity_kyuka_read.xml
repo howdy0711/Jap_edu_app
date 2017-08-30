@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#61ade0"
+    tools:context="com.example.lg.cpa.Dadami">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/textID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:text="仕事を持っている人の今年の夏休み日数は平均６・３日、予算は同１０万６０００円で、いずれも前年（６・５日、１１万５０００円）を下回りそうだ。ＡＢＣリサーチが１９日発表したアンケート調査によるもので、夏休みの過ごし方は「国内旅行」（２４・７％）が２年連続トップ。このほか「帰省」（１５・６％）、「なるべく家にいる」（９・６％）「海外旅行」（５・９％）だった。遊園地やキャンプ、スポーツなど、身近な施設や行楽地に出かける人が増えているのが今年の傾向で、ＡＢＣリサーチは「時間とお金を上手にバランスさせている」と分析している。調査は６月下旬、首都圏に住む男女６３０人を対象に行った。
+"
+            />
+    </ScrollView>
+
+</LinearLayout>
